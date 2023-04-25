@@ -11,6 +11,7 @@ import order from "./slices/order";
 const rootReducer = {
   liked: favoriteRestaurants,
   cart: cart,
+  
   filter: shopFilter,
   currency: currency,
   userCart: userCart,

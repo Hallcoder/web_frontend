@@ -2,7 +2,9 @@ import { Order } from "interfaces";
 
 export default function calculateOrderSubTotal(data?: Order) {
   if (!data) {
+
     return 0;
+    
   }
   const productsTotal = data.details.reduce(
     (total, item) => (total += item.total_price || 0),

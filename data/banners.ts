@@ -8,6 +8,7 @@ const banners = [
     id: 2,
     image: "/images/banner2.png",
     url: "/",
+    
   },
   {
     id: 3,

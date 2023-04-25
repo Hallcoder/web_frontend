@@ -12,8 +12,9 @@ type ShopContextType = {
   isOpen: boolean;
 };
 
-export const ShopContext = createContext<ShopContextType>(
-  {} as ShopContextType
+export const ShopContext = createContext<ShopContextType>( 
+  {} as ShopContextType 
+  
 );
 
 export const useShop = () => useContext(ShopContext);
