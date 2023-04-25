@@ -91,7 +91,7 @@ export default function Shops() {
   );
   const shops = data?.pages?.flatMap((item) => item.data) || [];
 
-  const { data: shopCategories } = useQuery("shopCategories", () =>
+  const { data: shopCategories } = useQuery(["shopCategories"], () =>
     categoryService.getAllShopCategories()
   );
 

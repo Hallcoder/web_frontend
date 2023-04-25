@@ -36,7 +36,7 @@ export default function ShopFilter({ handleClose }: Props) {
   const [tag, setTag] = useState(group.tag);
   const [open, setOpen] = useState(group.open);
 
-  const { data: tags } = useQuery("tags", () => shopService.getAllTags());
+  const { data: tags } = useQuery(["tags"], () => shopService.getAllTags());
   // const { data: avgPrices } = useQuery(
   //   "avg-prices",
   //   () => shopService.getAveragePrices(),

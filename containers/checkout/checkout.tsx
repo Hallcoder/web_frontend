@@ -34,7 +34,7 @@ export default function CheckoutContainer({ data, children }: Props) {
   const { order } = useAppSelector(selectOrder);
   const { isOpen } = useShopWorkingSchedule(data);
 
-  const { data: payments } = useQuery("payments", () =>
+  const { data: payments } = useQuery(["payments"], () =>
     paymentService.getAll()
   );
 

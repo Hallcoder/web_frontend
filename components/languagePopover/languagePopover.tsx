@@ -15,7 +15,7 @@ type Props = {
 };
 
 export default function LanguagePopover({ onClose }: Props) {
-  const { data } = useQuery("languages", () => languageService.getAllActive());
+  const { data } = useQuery(["languages"], () => languageService.getAllActive());
   const { setDirection } = useContext(ThemeContext);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

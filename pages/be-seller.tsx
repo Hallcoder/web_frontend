@@ -21,7 +21,7 @@ export default function BeSeller({}: Props) {
   const { data: shopCategories } = useQuery(["shopCategories", locale], () =>
     categoryService.getAllShopCategories({ perPage: 100 })
   );
-  const { data: tags } = useQuery("tags", () => shopService.getAllTags());
+  const { data: tags } = useQuery(["tags"], () => shopService.getAllTags());
 
   const formatCategories = (list: Category[] = []) => {
     if (!list.length) {

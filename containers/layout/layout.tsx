@@ -63,7 +63,7 @@ export default function Layout({ children }: LayoutProps) {
     }
   );
 
-  useQuery("currencies", () => currencyService.getAll(), {
+  useQuery(["currencies"], () => currencyService.getAll(), {
     onSuccess: (data) => {
       const activeCurrency = data.data.find((item: Currency) => item.default);
       if (!currency) {
@@ -72,7 +72,7 @@ export default function Layout({ children }: LayoutProps) {
     },
   });
 
-  useQuery("languages", () => languageService.getAllActive(), {
+  useQuery(["languages"], () => languageService.getAllActive(), {
     onSuccess: (data) => {
       const isRTL = !!data?.data.find((item: Langauge) => item.locale == locale)
         ?.backward;
@@ -80,7 +80,7 @@ export default function Layout({ children }: LayoutProps) {
     },
   });
 
-  useQuery("settings", () => informationService.getSettings(), {
+  useQuery(["settings"], () => informationService.getSettings(), {
     onSuccess: (data) => {
       const obj = createSettings(data.data);
       updateSettings({
