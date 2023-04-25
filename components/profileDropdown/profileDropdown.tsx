@@ -45,7 +45,7 @@ export default function ProfileDropdown({ data }: Props) {
   );
 
   const { data: activeOrders } = useQuery(
-    "activeOrders",
+   [ "activeOrders"],
     () =>
       orderService.getAll(
         qs.stringify({ order_statuses: true, statuses: activeOrderStatuses })
