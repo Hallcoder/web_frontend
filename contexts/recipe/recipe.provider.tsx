@@ -11,7 +11,9 @@ interface RecipeAction {
   payload: number;
 }
 interface StateType {
+  
   stocks: RecipeStock[];
+
 }
 
 function reducer(state: StateType, action: RecipeAction) {
