@@ -9,6 +9,7 @@ const nextConfig = {
     ignoreBuildErrors: false,
   },
   images: {
+    unoptimized:true,
     remotePatterns: [
       {
         protocol: process.env.NEXT_PUBLIC_PROTOCOL,
