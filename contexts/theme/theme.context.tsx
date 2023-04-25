@@ -8,6 +8,7 @@ type ThemeContextType = {
   direction: DirType;
   toggleDarkMode: () => void;
   isDarkMode: boolean;
+  
   setDirection: (dir: DirType) => void;
 };
 

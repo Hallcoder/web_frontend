@@ -6,6 +6,7 @@ type AuthContextType = {
   facebookSignIn: () => Promise<any>;
   appleSignIn: () => Promise<any>;
   user: IUser;
+  
   setUserData: (data: IUser) => void;
   isAuthenticated: boolean;
   logout: () => void;

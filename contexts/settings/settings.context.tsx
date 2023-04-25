@@ -7,6 +7,7 @@ type SettingsContextType = {
   address: string;
   updateAddress: (data?: any) => void;
   location: string;
+  
   updateLocation: (data?: any) => void;
 };
 

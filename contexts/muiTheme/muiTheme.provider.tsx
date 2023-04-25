@@ -9,6 +9,7 @@ type Props = {
 
 export default function MuiThemeProvider({
   children,
+  
   deviceType: { mobile, tablet, desktop },
 }: Props) {
   const ssrMatchMedia = (query: any) => ({

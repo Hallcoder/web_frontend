@@ -6,6 +6,7 @@ type RecipeContextType = {
   addRecipeStock: (stock_id: number) => void;
   reduceRecipeStock: (stock_id: number) => void;
   addableRecipeStocks: RecipeStock[];
+  
 };
 
 export const RecipeContext = createContext<RecipeContextType>(
