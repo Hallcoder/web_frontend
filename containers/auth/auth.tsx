@@ -16,7 +16,7 @@ export default function AuthContainer({ children }: Props) {
   const { isDarkMode } = useContext(ThemeContext);
   const { updateSettings } = useSettings();
 
-  useQuery(["settings",] () => informationService.getSettings(), {
+  useQuery(["settings"], () => informationService.getSettings(), {
     onSuccess: (data) => {
       const obj = createSettings(data.data);
       updateSettings({

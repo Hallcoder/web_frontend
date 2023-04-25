@@ -37,7 +37,7 @@ export default function CheckoutProductItem({ data, disabled }: Props) {
   const { totalPrice, oldPrice } = calculateCartProductTotal(data);
 
   const { refetch, isLoading: isCartLoading } = useQuery(
-    "cart",
+   [ "cart"],
     () => cartService.get(),
     {
       onSuccess: (data) => dispatch(updateUserCart(data.data)),
