@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from "hooks/useRedux";
 import { clearCart, selectCart, setToCart } from "redux/slices/cart";
 import useModal from "hooks/useModal";
 import CartReplaceModal from "components/clearCartModal/cartReplacePrompt";
-import { useQuery } from "@tanstack/@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import productService from "services/product";
 import ProductUI from "./productUI";
 import AddonsForm from "components/extrasForm/addonsForm";

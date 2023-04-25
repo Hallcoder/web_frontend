@@ -4,7 +4,7 @@ import cls from "./currencyList.module.scss";
 import { Currency } from "interfaces";
 import { useAppDispatch, useAppSelector } from "hooks/useRedux";
 import { selectCurrency, setCurrency } from "redux/slices/currency";
-import { useQuery } from "@tanstack/@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import currencyService from "services/currency";
 
 type Props = {
@@ -15,9 +15,9 @@ export default function CurrencyList({ onClose }: Props) {
   const dispatch = useAppDispatch();
   const currency = useAppSelector(selectCurrency);
 
-  const { data } = useQuery("currencies", () => currencyService.getAll());
+  const { data } = useQuery(["currencies"], () => currencyService.getAll());
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {                
     const currencyId = event.target.value;
     const activeCurrency = data?.data?.find(
       (item: Currency) => item.id === Number(currencyId)
@@ -25,7 +25,6 @@ export default function CurrencyList({ onClose }: Props) {
     dispatch(setCurrency(activeCurrency));
     onClose();
   };
-
   const controlProps = (item: string) => ({
     checked: String(currency?.id) === item,
     onChange: handleChange,

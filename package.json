@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "export":"next export",
+    "export": "next export",
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
@@ -51,6 +51,7 @@
     "swiper": "^8.4.5"
   },
   "devDependencies": {
+    "@tanstack/react-query": "^4.29.5",
     "@types/css-mediaquery": "^0.1.1",
     "@types/google-map-react": "^2.1.7",
     "@types/js-cookie": "^3.0.2",

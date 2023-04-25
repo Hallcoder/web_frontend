@@ -35,7 +35,7 @@ export default function MobileAppDrawer({ handleClose }: Props) {
     useModal();
 
   const { data: activeOrders } = useQuery(
-    "activeOrders",
+    ["activeOrders"],
     (): Promise<any> =>
       orderService.getAll(
         qs.stringify({ order_statuses: true, statuses: activeOrderStatuses })
