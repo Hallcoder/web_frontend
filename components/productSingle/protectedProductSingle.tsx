@@ -3,7 +3,7 @@ import { Product, ProductExtra, Stock } from "interfaces";
 import { getExtras, sortExtras } from "utils/getExtras";
 import { useAppDispatch, useAppSelector } from "hooks/useRedux";
 import { selectCurrency } from "redux/slices/currency";
-import { useMutation, useQuery } from "react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import cartService from "services/cart";
 import {
   clearUserCart,

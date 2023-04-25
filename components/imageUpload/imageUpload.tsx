@@ -2,7 +2,7 @@ import React from "react";
 import cls from "./imageUpload.module.scss";
 import { FormikProps } from "formik";
 import { ShopFormType } from "interfaces";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import galleryService from "services/gallery";
 import Image from "next/image";
 import getImage from "utils/getImage";

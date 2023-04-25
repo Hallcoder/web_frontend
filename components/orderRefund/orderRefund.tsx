@@ -2,7 +2,7 @@ import React from "react";
 import cls from "./orderRefund.module.scss";
 import { useTranslation } from "react-i18next";
 import { useFormik } from "formik";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import refundService from "services/refund";
 import { useRouter } from "next/router";
 import TextInput from "components/inputs/textInput";

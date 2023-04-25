@@ -17,7 +17,7 @@ import useModal from "hooks/useModal";
 import MobileDrawer from "containers/drawer/mobileDrawer";
 import LanguagePopover from "components/languagePopover/languagePopover";
 import CurrencyList from "components/currencyList/currencyList";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import orderService from "services/order";
 import qs from "qs";
 import { activeOrderStatuses } from "constants/status";

@@ -8,7 +8,7 @@ import { useAppSelector } from "hooks/useRedux";
 import { selectUserCart } from "redux/slices/userCart";
 import { useShop } from "contexts/shop/shop.context";
 import SecondaryButton from "components/button/secondaryButton";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import cartService from "services/cart";
 
 type Props = {

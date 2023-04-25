@@ -4,7 +4,7 @@ import cls from "./currencyList.module.scss";
 import { Currency } from "interfaces";
 import { useAppDispatch, useAppSelector } from "hooks/useRedux";
 import { selectCurrency, setCurrency } from "redux/slices/currency";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/@tanstack/react-query";
 import currencyService from "services/currency";
 
 type Props = {

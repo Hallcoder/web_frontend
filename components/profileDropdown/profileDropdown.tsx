@@ -13,7 +13,7 @@ import LogoutCircleRLineIcon from "remixicon-react/LogoutCircleRLineIcon";
 import UserStarLineIcon from "remixicon-react/UserStarLineIcon";
 import { useAuth } from "contexts/auth/auth.context";
 import usePopover from "hooks/usePopover";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import orderService from "services/order";
 import qs from "qs";
 import { activeOrderStatuses } from "constants/status";

@@ -13,7 +13,7 @@ import { useFormik } from "formik";
 import CompassDiscoverLineIcon from "remixicon-react/CompassDiscoverLineIcon";
 import { getAddressFromLocation } from "utils/getAddressFromLocation";
 import shopService from "services/shop";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 
 interface Props extends DialogProps {
   address?: string;

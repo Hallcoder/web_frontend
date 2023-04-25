@@ -8,7 +8,7 @@ import SecondaryButton from "components/button/secondaryButton";
 import { FormikProps } from "formik";
 import { OrderFormValues } from "interfaces";
 import useDebounce from "hooks/useDebounce";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import orderService from "services/order";
 import useDidUpdate from "hooks/useDidUpdate";
 import { useAuth } from "contexts/auth/auth.context";

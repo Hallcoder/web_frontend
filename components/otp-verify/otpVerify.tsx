@@ -7,7 +7,7 @@ import authService from "services/auth";
 import cls from "./otpVerify.module.scss";
 import { Stack } from "@mui/material";
 import { useEffect } from "react";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import { useCountDown } from "hooks/useCountDown";
 import { useSettings } from "contexts/settings/settings.context";
 import { useAuth } from "contexts/auth/auth.context";

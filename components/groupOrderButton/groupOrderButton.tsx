@@ -13,7 +13,7 @@ import ModalContainer from "containers/modal/modal";
 import MobileDrawer from "containers/drawer/mobileDrawer";
 import GroupOrderCard from "components/groupOrderCard/groupOrderCard";
 import ConfirmationModal from "components/confirmationModal/confirmationModal";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import cartService from "services/cart";
 
 type Props = {};

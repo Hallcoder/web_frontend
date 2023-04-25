@@ -3,7 +3,7 @@ import RadioInput from "components/inputs/radioInput";
 import cls from "./languagePopover.module.scss";
 import { Langauge } from "interfaces";
 import i18n from "i18n";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import languageService from "services/language";
 import translationService from "services/translations";
 import { ThemeContext } from "contexts/theme/theme.context";

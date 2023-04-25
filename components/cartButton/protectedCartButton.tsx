@@ -9,7 +9,7 @@ import {
   selectUserCart,
   updateUserCart,
 } from "redux/slices/userCart";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import cartService from "services/cart";
 import Price from "components/price/price";
 import { selectCurrency } from "redux/slices/currency";

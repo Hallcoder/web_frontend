@@ -8,7 +8,7 @@ import { useMediaQuery } from "@mui/material";
 import { useRecipe } from "contexts/recipe/recipe.context";
 import Badge from "components/badge/badge";
 import Price from "components/price/price";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/@tanstack/react-query";
 import { useAppDispatch, useAppSelector } from "hooks/useRedux";
 import cartService from "services/cart";
 import {

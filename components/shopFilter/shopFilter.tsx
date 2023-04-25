@@ -7,7 +7,7 @@ import SwitchInput from "components/inputs/switchInput";
 import DarkButton from "components/button/darkButton";
 import SecondaryButton from "components/button/secondaryButton";
 import shopService from "services/shop";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import { useAppDispatch, useAppSelector } from "hooks/useRedux";
 import { selectShopFilter, setGroupFilter } from "redux/slices/shopFilter";
 import { IShopTag } from "interfaces";

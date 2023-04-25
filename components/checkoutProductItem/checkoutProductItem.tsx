@@ -11,7 +11,7 @@ import { useAppDispatch, useAppSelector } from "hooks/useRedux";
 import { useRouter } from "next/router";
 import cartService from "services/cart";
 import { updateUserCart } from "redux/slices/userCart";
-import { useMutation, useQuery } from "react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import useDidUpdate from "hooks/useDidUpdate";
 import Loading from "components/loader/loading";
 import { useTranslation } from "react-i18next";

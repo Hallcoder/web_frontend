@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { useFormik } from "formik";
 import PrimaryButton from "components/button/primaryButton";
 import DarkButton from "components/button/darkButton";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import profileService from "services/profile";
 import { error, success } from "components/alert/toast";
 import { useAuth } from "contexts/auth/auth.context";

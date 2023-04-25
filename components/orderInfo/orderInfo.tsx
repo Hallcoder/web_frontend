@@ -13,7 +13,7 @@ import dayjs from "dayjs";
 import dynamic from "next/dynamic";
 import useModal from "hooks/useModal";
 import orderService from "services/order";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import { error, success } from "components/alert/toast";
 import { useRouter } from "next/router";
 import cartService from "services/cart";

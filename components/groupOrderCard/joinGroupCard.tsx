@@ -2,7 +2,7 @@ import React from "react";
 import cls from "./groupOrderCard.module.scss";
 import PrimaryButton from "components/button/primaryButton";
 import { useTranslation } from "react-i18next";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import cartService from "services/cart";
 import { useRouter } from "next/router";
 import { useFormik } from "formik";

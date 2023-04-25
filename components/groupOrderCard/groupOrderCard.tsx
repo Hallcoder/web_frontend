@@ -7,7 +7,7 @@ import FileCopyFillIcon from "remixicon-react/FileCopyFillIcon";
 import { WEBSITE_URL } from "constants/constants";
 import User6LineIcon from "remixicon-react/User6LineIcon";
 import { error, info, success } from "components/alert/toast";
-import { useMutation, useQuery } from "react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import cartService from "services/cart";
 import { useRouter } from "next/router";
 import { useAppDispatch, useAppSelector } from "hooks/useRedux";

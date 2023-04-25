@@ -3,7 +3,7 @@ import { CartStockWithProducts } from "interfaces";
 import { useAppDispatch, useAppSelector } from "hooks/useRedux";
 import useDebounce from "hooks/useDebounce";
 import useDidUpdate from "hooks/useDidUpdate";
-import { useMutation, useQuery } from "react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import cartService from "services/cart";
 import { useRouter } from "next/router";
 import { updateUserCart } from "redux/slices/userCart";

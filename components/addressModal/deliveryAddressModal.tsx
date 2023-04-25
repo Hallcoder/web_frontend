@@ -11,7 +11,7 @@ import CompassDiscoverLineIcon from "remixicon-react/CompassDiscoverLineIcon";
 import { getAddressFromLocation } from "utils/getAddressFromLocation";
 import { Location, OrderFormValues } from "interfaces";
 import { FormikProps } from "formik";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import shopService from "services/shop";
 import { useRouter } from "next/router";
 

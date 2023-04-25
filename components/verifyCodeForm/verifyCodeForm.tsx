@@ -9,7 +9,7 @@ import authService from "services/auth";
 import { error, success } from "components/alert/toast";
 import { setCookie } from "utils/session";
 import { useAuth } from "contexts/auth/auth.context";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import { useCountDown } from "hooks/useCountDown";
 import { useSettings } from "contexts/settings/settings.context";
 

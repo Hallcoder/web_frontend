@@ -7,7 +7,7 @@ import StarSmileFillIcon from "remixicon-react/StarSmileFillIcon";
 import StyledRating from "./styledRating";
 import { useFormik } from "formik";
 import { useRouter } from "next/router";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import orderService from "services/order";
 import { success, error } from "components/alert/toast";
 
