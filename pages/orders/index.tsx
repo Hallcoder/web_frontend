@@ -3,7 +3,7 @@ import SEO from "components/seo";
 import OrdersContainer from "containers/orders/orders";
 import { useTranslation } from "react-i18next";
 import dynamic from "next/dynamic";
-import { useInfiniteQuery, useQuery } from "react-query";
+import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import orderService from "services/order";
 import OrderList from "containers/orderList/orderList";
 import { useAppSelector } from "hooks/useRedux";

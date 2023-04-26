@@ -5,7 +5,7 @@ import CheckoutContainer from "containers/checkout/checkout";
 import CheckoutDelivery from "containers/checkoutDelivery/checkoutDelivery";
 import CheckoutProducts from "containers/checkoutProducts/checkoutProducts";
 import { GetServerSideProps } from "next";
-import { dehydrate, QueryClient, useQuery } from "react-query";
+import { dehydrate, QueryClient, useQuery } from "@tanstack/react-query";
 import shopService from "services/shop";
 import { useRouter } from "next/router";
 import cartService from "services/cart";

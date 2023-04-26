@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef } from "react";
 import SEO from "components/seo";
 import HelpContainer from "containers/help/help";
 import SupportCard from "components/supportCard/supportCard";
-import { dehydrate, QueryClient, useInfiniteQuery } from "react-query";
+import { dehydrate, QueryClient, useInfiniteQuery } from "@tanstack/react-query";
 import faqService from "services/faq";
 import Loader from "components/loader/loader";
 import { GetServerSideProps } from "next";

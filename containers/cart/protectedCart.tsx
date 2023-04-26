@@ -6,7 +6,7 @@ import EmptyCart from "components/emptyCart/emptyCart";
 import { IShop, UserCart } from "interfaces";
 import ProtectedCartProduct from "components/cartProduct/protectedCartProduct";
 import ProtectedCartHeader from "components/cartHeader/protectedCartHeader";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import cartService from "services/cart";
 import Loading from "components/loader/loading";
 import { useAppDispatch, useAppSelector } from "hooks/useRedux";

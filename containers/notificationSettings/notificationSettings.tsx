@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import cls from "./notificationSettings.module.scss";
 import SwitchInput from "components/inputs/switchInput";
 import { INotification } from "interfaces";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import profileService from "services/profile";
 import { error } from "components/alert/toast";
 import useDidUpdate from "hooks/useDidUpdate";

@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "components/seo";
 import BeDelivery from "containers/beDelivery/beDelivery";
 import { GetStaticProps } from "next";
-import { QueryClient, dehydrate, useQuery } from "react-query";
+import { QueryClient, dehydrate, useQuery } from "@tanstack/react-query";
 import { getCookie } from "utils/session";
 import getLanguage from "utils/getLanguage";
 import pageService from "services/page";

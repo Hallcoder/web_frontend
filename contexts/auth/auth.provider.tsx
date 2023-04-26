@@ -16,7 +16,7 @@ import { clearUserCart } from "redux/slices/userCart";
 import { clearCart } from "redux/slices/cart";
 import { clearLikedRestaurants } from "redux/slices/favoriteRestaurants";
 import { clearFilter } from "redux/slices/shopFilter";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import profileService from "services/profile";
 import { IUser } from "interfaces/user.interface";
 import { clearSearch } from "redux/slices/search";

@@ -5,7 +5,7 @@ import ModalContainer from "containers/modal/modal";
 import { DialogProps } from "@mui/material";
 import ArrowLeftLineIcon from "remixicon-react/ArrowLeftLineIcon";
 import MobileSearch from "components/mobileSearch/mobileSearch";
-import { useInfiniteQuery } from "react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import shopService from "services/shop";
 import productService from "services/product";
 import SearchResult from "components/searchResult/searchResult";

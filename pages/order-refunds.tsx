@@ -3,7 +3,7 @@ import SEO from "components/seo";
 import OrdersContainer from "containers/orders/orders";
 import { useTranslation } from "react-i18next";
 import dynamic from "next/dynamic";
-import { useInfiniteQuery } from "react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import RefundList from "containers/orderList/refundList";
 import refundService from "services/refund";
 

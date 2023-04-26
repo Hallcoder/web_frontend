@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef } from "react";
 import SEO from "components/seo";
 import dynamic from "next/dynamic";
 import RecipeListHeader from "containers/recipeListHeader/recipeListHeader";
-import { useInfiniteQuery, useQuery } from "react-query";
+import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import categoryService from "services/category";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";

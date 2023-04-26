@@ -12,7 +12,7 @@ import genders from "data/genders";
 import dynamic from "next/dynamic";
 import { IUser } from "interfaces/user.interface";
 import useModal from "hooks/useModal";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import galleryService from "services/gallery";
 import getAvatar from "utils/getAvatar";
 import Loading from "components/loader/loading";

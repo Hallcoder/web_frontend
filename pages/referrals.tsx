@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "components/seo";
 import ReferralContainer from "containers/referralContainer/referralContainer";
 import { useTranslation } from "react-i18next";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import informationService from "services/information";
 
 type Props = {};

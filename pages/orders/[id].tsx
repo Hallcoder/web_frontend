@@ -3,7 +3,7 @@ import SEO from "components/seo";
 import OrderHeader from "containers/orderHeader/orderHeader";
 import OrderMap from "containers/orderMap/orderMap";
 import OrderContainer from "containers/orderContainer/orderContainer";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import orderService from "services/order";
 import { useRouter } from "next/router";
 import useModal from "hooks/useModal";

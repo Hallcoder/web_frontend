@@ -2,7 +2,7 @@ import SEO from "components/seo";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "@mui/material";
 import dynamic from "next/dynamic";
-import { useInfiniteQuery, useQuery } from "react-query";
+import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import shopService from "services/shop";
 import { useCallback, useEffect, useRef } from "react";
 import categoryService from "services/category";

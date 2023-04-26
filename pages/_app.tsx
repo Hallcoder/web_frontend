@@ -12,7 +12,7 @@ import createEmotionCache from "utils/createEmotionCache";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import MuiThemeProvider from "contexts/muiTheme/muiTheme.provider";
 import { useDeviceType } from "utils/useDeviceType";
-import { Hydrate, QueryClient, QueryClientProvider } from "react-query";
+import { Hydrate, QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AuthProvider } from "contexts/auth/auth.provider";
 import { SettingsProvider } from "contexts/settings/settings.provider";
 import NProgress from "nprogress";

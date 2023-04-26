@@ -1,7 +1,7 @@
 import React from "react";
 import SEO from "components/seo";
 import Content from "containers/content/content";
-import { dehydrate, QueryClient, useQuery } from "react-query";
+import { dehydrate, QueryClient, useQuery } from "@tanstack/react-query";
 import { GetStaticProps } from "next";
 import informationService from "services/information";
 import { useTranslation } from "react-i18next";

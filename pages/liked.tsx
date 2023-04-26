@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import dynamic from "next/dynamic";
 import { useAppSelector } from "hooks/useRedux";
 import { selectLikedRestaurants } from "redux/slices/favoriteRestaurants";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import storyService from "services/story";
 import bannerService from "services/banner";
 

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import cls from "./welcome.module.scss";
 import { ThemeContext } from "contexts/theme/theme.context";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import informationService from "services/information";
 import { useSettings } from "contexts/settings/settings.context";
 import ErrorBoundary from "containers/errorBoundary/errorBoundary";

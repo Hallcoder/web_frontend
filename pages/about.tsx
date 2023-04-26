@@ -3,7 +3,7 @@ import SEO from "components/seo";
 import AboutUs from "containers/aboutUs/aboutUs";
 import AppSection from "containers/appSection/appSection";
 import { GetStaticProps } from "next";
-import { QueryClient, dehydrate, useQuery } from "react-query";
+import { QueryClient, dehydrate, useQuery } from "@tanstack/react-query";
 import getLanguage from "utils/getLanguage";
 import { getCookie } from "utils/session";
 import pageService from "services/page";

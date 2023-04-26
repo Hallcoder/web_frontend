@@ -6,7 +6,7 @@ import ShopLogoBackground from "components/shopLogoBackground/shopLogoBackground
 import { useFormik } from "formik";
 import { useSettings } from "contexts/settings/settings.context";
 import orderService from "services/order";
-import { useMutation, useQuery } from "react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import { useRouter } from "next/router";
 import { useAppSelector } from "hooks/useRedux";
 import { selectCurrency } from "redux/slices/currency";

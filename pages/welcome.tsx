@@ -5,7 +5,7 @@ import WelcomeHero from "components/welcomeHero/welcomeHero";
 import WelcomeFeatures from "components/welcomeFeatures/welcomeFeatures";
 import WelcomeCard from "components/welcomeCard/welcomeCard";
 import WhyChooseUs from "components/whyChooseUs/whyChooseUs";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import useLocale from "hooks/useLocale";
 import blogService from "services/blog";
 import WelcomeBlog from "components/welcomeBlog/welcomeBlog";

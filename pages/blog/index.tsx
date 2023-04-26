@@ -4,7 +4,7 @@ import BlogList from "containers/blogList/blogList";
 import { GetStaticProps } from "next";
 import React, { useCallback, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { dehydrate, QueryClient, useInfiniteQuery } from "react-query";
+import { dehydrate, QueryClient, useInfiniteQuery } from "@tanstack/react-query";
 import blogService from "services/blog";
 import getLanguage from "utils/getLanguage";
 import { getCookie } from "utils/session";

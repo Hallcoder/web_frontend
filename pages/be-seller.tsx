@@ -7,7 +7,7 @@ import ShopGeneralForm from "components/shopForm/shopGeneralForm";
 import { useTranslation } from "react-i18next";
 import ShopDeliveryForm from "components/shopForm/shopDeliveryForm";
 import ShopAddressForm from "components/shopForm/shopAddressForm";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import categoryService from "services/category";
 import shopService from "services/shop";
 import { Category } from "interfaces";

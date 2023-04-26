@@ -9,7 +9,7 @@ import dynamic from "next/dynamic";
 import useModal from "hooks/useModal";
 import { useAppSelector } from "hooks/useRedux";
 import { selectUserCart } from "redux/slices/userCart";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import orderService from "services/order";
 import Price from "components/price/price";
 import Loading from "components/loader/loading";

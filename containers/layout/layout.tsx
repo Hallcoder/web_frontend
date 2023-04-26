@@ -4,7 +4,7 @@ import Header from "./header/header";
 import MobileHeader from "./mobileHeader/mobileHeader";
 import ProfileHeader from "./profileHeader/profileHeader";
 import { useMediaQuery } from "@mui/material";
-import { useMutation, useQuery } from "react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import cartService from "services/cart";
 import { useAppDispatch, useAppSelector } from "hooks/useRedux";
 import { updateUserCart } from "redux/slices/userCart";

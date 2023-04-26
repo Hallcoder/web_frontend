@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { useAuth } from "contexts/auth/auth.context";
 import { useSettings } from "contexts/settings/settings.context";
 import { Grid, useMediaQuery } from "@mui/material";
-import { useMutation } from "react-query";
+import { useMutation } from "@tanstack/react-query";
 import shopService from "services/shop";
 import useModal from "hooks/useModal";
 import { success, error } from "components/alert/toast";

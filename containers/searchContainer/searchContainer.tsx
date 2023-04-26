@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import useDebounce from "hooks/useDebounce";
 import useDidUpdate from "hooks/useDidUpdate";
 import SearchResult from "components/searchResult/searchResult";
-import { useInfiniteQuery, useQuery } from "react-query";
+import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import shopService from "services/shop";
 import productService from "services/product";
 import { useRouter } from "next/router";

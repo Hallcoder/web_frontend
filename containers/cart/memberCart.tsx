@@ -3,7 +3,7 @@ import cls from "./cart.module.scss";
 import CartServices from "components/cartServices/cartServices";
 import EmptyCart from "components/emptyCart/emptyCart";
 import { IShop, UserCart } from "interfaces";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import cartService from "services/cart";
 import Loading from "components/loader/loading";
 import { useAppDispatch, useAppSelector } from "hooks/useRedux";

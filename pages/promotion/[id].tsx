@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
-import { dehydrate, QueryClient, useInfiniteQuery } from "react-query";
+import { dehydrate, QueryClient, useInfiniteQuery } from "@tanstack/react-query";
 import bannerService from "services/banner";
 import SEO from "components/seo";
 import dynamic from "next/dynamic";

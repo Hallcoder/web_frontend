@@ -15,7 +15,7 @@ import { useMediaQuery } from "@mui/material";
 import dynamic from "next/dynamic";
 import checkIsDisabledDay from "utils/checkIsDisabledDay";
 import Map from "components/map/map";
-import { useInfiniteQuery } from "react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import branchService from "services/branch";
 import BranchList from "components/branchList/branchList";
 

@@ -6,7 +6,7 @@ import ProductList from "containers/productList/productList";
 import { useMediaQuery } from "@mui/material";
 import MobileShopNavbar from "containers/mobileShopNavbar/mobileShopNavbar";
 import { GetServerSideProps } from "next";
-import { dehydrate, QueryClient, useQuery } from "react-query";
+import { dehydrate, QueryClient, useQuery } from "@tanstack/react-query";
 import shopService from "services/shop";
 import { useRouter } from "next/router";
 import categoryService from "services/category";

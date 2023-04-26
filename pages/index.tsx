@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef } from "react";
 import SEO from "components/seo";
 import dynamic from "next/dynamic";
-import { useInfiniteQuery, useQuery } from "react-query";
+import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "@mui/material";
 import shopService from "services/shop";

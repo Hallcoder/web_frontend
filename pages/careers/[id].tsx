@@ -3,7 +3,7 @@ import SEO from "components/seo";
 import { useRouter } from "next/router";
 import CareersContent from "containers/content/careersContent";
 import { GetServerSideProps } from "next";
-import { QueryClient, dehydrate, useQuery } from "react-query";
+import { QueryClient, dehydrate, useQuery } from "@tanstack/react-query";
 import getLanguage from "utils/getLanguage";
 import careerService from "services/career";
 import useLocale from "hooks/useLocale";

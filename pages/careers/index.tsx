@@ -3,7 +3,7 @@ import SEO from "components/seo";
 import OrdersContainer from "containers/orders/orders";
 import CareerList from "containers/careerList/careerList";
 import useLocale from "hooks/useLocale";
-import { useInfiniteQuery } from "react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import careerService from "services/career";
 import Loader from "components/loader/loader";
 

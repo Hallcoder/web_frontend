@@ -4,7 +4,7 @@ import Image from "next/image";
 import cls from "./auth.module.scss";
 import { ThemeContext } from "contexts/theme/theme.context";
 import Link from "next/link";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import informationService from "services/information";
 import { useSettings } from "contexts/settings/settings.context";
 

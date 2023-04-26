@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "components/seo";
 import RecipeContainer from "containers/recipeContainer/recipeContainer";
 import { GetServerSideProps } from "next";
-import { dehydrate, QueryClient, useQuery } from "react-query";
+import { dehydrate, QueryClient, useQuery } from "@tanstack/react-query";
 import getLanguage from "utils/getLanguage";
 import recipeService from "services/recipe";
 import { useRouter } from "next/router";

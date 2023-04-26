@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "components/seo";
 import SettingsContainer from "containers/settings/settings";
 import NotificationSettings from "containers/notificationSettings/notificationSettings";
-import { useQuery } from "react-query";
+import { useQuery } from "@tanstack/react-query";
 import profileService from "services/profile";
 import { useTranslation } from "react-i18next";
 

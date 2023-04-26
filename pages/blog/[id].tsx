@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "components/seo";
 import BlogContent from "containers/blogContent/blogContent";
 import { useRouter } from "next/router";
-import { dehydrate, QueryClient, useQuery } from "react-query";
+import { dehydrate, QueryClient, useQuery } from "@tanstack/react-query";
 import blogService from "services/blog";
 import { GetStaticPaths, GetStaticProps } from "next";
 import getImage from "utils/getImage";
